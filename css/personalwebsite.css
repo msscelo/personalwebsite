@@ -1,0 +1,91 @@
+:root {
+    --light-bg-color: rgba(249, 250, 251, 1);
+    --dark-bg-color: rgba(31, 41, 55, 1);
+
+    --light-text-color: rgba(31, 41, 55, 1);
+    --dark-text-color: rgba(249, 250, 251, 1);
+
+    --light-title-color: rgb(35, 46, 33);
+    --dark-title-color: rgb(107, 133, 123);
+
+    --light-button-color: rgb(35, 46, 33);
+    --dark-button-color: rgb(107, 133, 123);
+    --textfont: "Montserrat";
+}
+
+
+body {
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 920px;
+    margin: auto;
+}
+p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+h1 {
+    color: var(--light-title-color);
+    font-weight: 800;
+}
+section {
+    align-items: center;
+    margin-top: auto;
+    font-family: var(--textfont), sans-serif;
+    font-weight: 600;
+}
+#photo {
+    flex-direction: row;
+    font-family: var(--textfont), sans-serif;
+}
+#myphoto {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    /* background: url(myphoto.jfif); */
+    /* background-size: 60px 60px; */
+}
+#contact-section {
+    margin-top: auto;
+    margin: auto;
+}
+#contacts {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+#contacts div {
+    color: #36573e;
+    font-size: 35px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+#contacts div a i {
+    color: var(--light-button-color);
+}
+
+#corner-left-bottom {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+#corner-right-bottom {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: block;
+    text-indent: -9999px;
+    width: 60px;
+    height: 60px;
+    background: url(../favicon.svg);
+    background-size: 60px 60px;
+}
